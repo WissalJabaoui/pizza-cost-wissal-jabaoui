@@ -1,0 +1,23 @@
+# Greet the user 
+print("Welcome to Wissal's Pizza Parlour")
+
+# Ask the user to enter the pizza size 
+diameter = int( input ("Enter the diameter (inches ) : ")) 
+
+# Declare constants
+RENTAL_COST = 1
+MATERIALS = 0.5
+LABOUR_COST = 0.75
+HST = 0.13
+
+# Calculate the subtotal 
+subtotal = RENTAL_COST + LABOUR_COST + MATERIALS * diameter 
+
+# Calculate the tax
+tax = subtotal * HST
+
+# Calculate the total
+total = tax + subtotal
+ 
+# Display the subtotal, tax & total to the user
+print ("The total cost of your pizza is ${:0.2f}. ". format( total ) )
